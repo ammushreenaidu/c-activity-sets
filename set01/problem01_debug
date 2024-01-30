@@ -1,0 +1,60 @@
+PS C:\Users\Lenovo\PSC\c-activity-sets> git add .
+warning: in the working copy of '.vscode/c_cpp_properties.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.vscode/launch.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of '.vscode/settings.json', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\Lenovo\PSC\c-activity-sets> git commit -m"test"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Lenovo@DESKTOP-GNUM9O0.(none)')
+PS C:\Users\Lenovo\PSC\c-activity-sets> git config --global user.email "ammushreerd.bsc23@rvu.edu.in"
+PS C:\Users\Lenovo\PSC\c-activity-sets> git config --global user.name "Ammushree R.D"
+PS C:\Users\Lenovo\PSC\c-activity-sets> gcc -g -O0 problem01.c
+gcc.exe: error: problem01.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+PS C:\Users\Lenovo\PSC\c-activity-sets> cd problem01.c
+cd : Cannot find path 'C:\Users\Lenovo\PSC\c-activity-sets\problem01.c' because it does not exist.
+At line:1 char:1
++ cd problem01.c
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\Lenovo...ets\problem01.c:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\Lenovo\PSC\c-activity-sets> cd set01
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> gcc -g -O0 problem01.c
+problem01.c:2:19: warning: extra tokens at end of #include directive
+ #include <stdio.h>>
+                   ^
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Lenovo\PSC\c-activity-sets\set01\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x40146e: file problem01.c, line 5.
+(gdb) r
+Starting program: C:\Users\Lenovo\PSC\c-activity-sets\set01/a.exe 
+[New Thread 18392.0x4024]
+[New Thread 18392.0x4334]
+[New Thread 18392.0xae4]
+[New Thread 18392.0x3fb8]
+
+Breakpoint 1, main () at problem01.c:5
+5           printf("Ammushree");
+(i-search)`': 
