@@ -1,0 +1,52 @@
+PS C:\Users\Lenovo\PSC\c-activity-sets> cd 
+PS C:\Users\Lenovo\PSC\c-activity-sets> cd set 01
+Set-Location : A positional parameter cannot be found that accepts argument '01'.
+At line:1 char:1
++ cd set 01
++ ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\Lenovo\PSC\c-activity-sets> gcc problem04.c
+gcc.exe: error: problem04.c: No such file or directory
+gcc.exe: fatal error: no input files
+compilation terminated.
+PS C:\Users\Lenovo\PSC\c-activity-sets> git add . 
+warning: in the working copy of '.vscode/settings.json', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\Lenovo\PSC\c-activity-sets> git commit -m"test"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+PS C:\Users\Lenovo\PSC\c-activity-sets> git pull
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (4/4), 2.26 KiB | 82.00 KiB/s, done.
+From https://github.com/ammushreenaidu/c-activity-sets
+   e9ceded..c7d8344  main       -> origin/main
+Updating e9ceded..c7d8344
+Fast-forward
+ set01/problem06_debug | 64 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 64 insertions(+)
+ create mode 100644 set01/problem06_debug
+PS C:\Users\Lenovo\PSC\c-activity-sets> git push 
+Everything up-to-date
+PS C:\Users\Lenovo\PSC\c-activity-sets> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+a.exe: No such file or directory.
+(gdb) b 6
+No symbol table is loaded.  Use the "file" command.
+(gdb) r
+Starting program:
+No executable specified, use `target exec'.
+(i-search)`': 
