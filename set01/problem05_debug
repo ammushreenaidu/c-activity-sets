@@ -1,0 +1,45 @@
+PS C:\Users\Lenovo\PSC\c-activity-sets> cd  
+PS C:\Users\Lenovo\PSC\c-activity-sets> cd set01
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> gcc problem05.c
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> git add .
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> git commit -m"test"
+[main dc91cda] test
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> git pull
+Already up to date.
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> 
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 346 bytes | 346.00 KiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/ammushreenaidu/c-activity-sets
+   33dae54..dc91cda  main -> main
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Lenovo\PSC\c-activity-sets\set01\a.exe...done.
+(gdb) b 6
+Breakpoint 1 at 0x402070: file ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S, line 6.
+(gdb) r
+Starting program: C:\Users\Lenovo\PSC\c-activity-sets\set01/a.exe
+[New Thread 19956.0x1f74]
+[New Thread 19956.0x3394]
+[New Thread 19956.0x1c5c]
+[New Thread 19956.0x8d8]
+
+Breakpoint 1, __chkstk_ms () at ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S:163
+163     ../../../src/gcc-6.3.0/libgcc/config/i386/cygwin.S: No such file or directory.
+(i-search)`': 
