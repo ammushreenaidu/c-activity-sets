@@ -4,4 +4,3 @@ int main()
 {
     printf("Ammushree");
     return 0;
-}
