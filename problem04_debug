@@ -1,0 +1,74 @@
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> cd
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> cd set 01
+Set-Location : A positional parameter cannot be found that accepts argument '01'.
+At line:1 char:1
++ cd set 01
++ ~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Set-Location], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+ 
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> gcc problem04.c
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file a.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> git add .
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> git commit -m"test"
+On branch main
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> git push
+To https://github.com/ammushreenaidu/c-activity-sets
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/ammushreenaidu/c-activity-sets'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> git pull
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 5), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), 2.88 KiB | 55.00 KiB/s, done.
+From https://github.com/ammushreenaidu/c-activity-sets
+   40c14be..865eb85  main       -> origin/main
+Merge made by the 'ort' strategy.
+ set01/problem02_debug | 42 ++++++++++++++++++++++++++++++++++++++++++
+ set01/problem03_debug | 30 ++++++++++++++++++++++++++++++
+ 2 files changed, 72 insertions(+)
+ create mode 100644 set01/problem02_debug
+ create mode 100644 set01/problem03_debug
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> git push
+Enumerating objects: 19, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 1.37 KiB | 350.00 KiB/s, done.
+Total 11 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 2 local objects.
+To https://github.com/ammushreenaidu/c-activity-sets
+   865eb85..26afe52  main -> main
+PS C:\Users\Lenovo\PSC\c-activity-sets\set01> gdb a.exe
+GNU gdb (GDB) 7.6.1
+Copyright (C) 2013 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "mingw32".
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>...
+Reading symbols from C:\Users\Lenovo\PSC\c-activity-sets\set01\a.exe...done.
+(gdb) b main
+Breakpoint 1 at 0x401463
+(gdb) r
+Starting program: C:\Users\Lenovo\PSC\c-activity-sets\set01/a.exe
+[New Thread 7588.0x56c8]
+[New Thread 7588.0x5cd0]
+[New Thread 7588.0x4d9c]
+[New Thread 7588.0x5494]
+
+Breakpoint 1, 0x00401463 in main ()
+(i-search)`': 
