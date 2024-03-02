@@ -18,14 +18,14 @@ void input(float *base, float *height) {
     scanf("%f", height);
 }
 
-void find
- (float base , float height, float *area) {
-    
+void find(float base , float height, float *area) 
+{
+
     *area = 0.5 * base * height;
 }
 
 void output(float base, float height, float area) {
-    printf("Base of the triangle: %.2f\n", base);
-    printf("Height of the triangle: %.2f\n", height);
-    printf("Area of the triangle: %.2f\n", area);
+    printf("Base of the triangle: %f\n", base);
+    printf("Height of the triangle: %f\n", height);
+    printf("Area of the triangle: %f\n", area);
 } 
